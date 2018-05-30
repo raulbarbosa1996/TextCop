@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="709.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textcop.FXMLDocumentController">
+    <children>
+        <Button layoutX="336.0" layoutY="261.0" onAction="#handleButtonActionFile" text="Computador" />
+      <Button layoutX="341.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleButtonActionWeb" prefHeight="25.0" prefWidth="73.0" text="Internet" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="741.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Ficheiro">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#close" text="Fechar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ajuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#About" text="TextCop" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Line endX="800.0" layoutX="107.0" layoutY="120.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <BorderPane layoutX="2.0" layoutY="27.0" prefHeight="91.0" prefWidth="741.0" style="-fx-background-color: #F5F5F5;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <left>
+            <ImageView fx:id="img" fitHeight="80.0" fitWidth="367.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+      <ImageView fx:id="img1" fitHeight="143.0" fitWidth="207.0" layoutX="260.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

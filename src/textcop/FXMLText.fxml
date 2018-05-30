@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="892.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textcop.FXMLTextController">
+   <children>
+      <TextArea fx:id="texto" layoutX="786.0" layoutY="7.0" opacity="0.0" prefHeight="48.0" prefWidth="83.0">
+         <font>
+            <Font name="Courier New" size="12.0" />
+         </font></TextArea>
+      <Label fx:id="label" layoutX="458.0" layoutY="14.0" prefHeight="17.0" prefWidth="57.0" />
+      <TabPane layoutX="49.0" layoutY="454.0" prefHeight="259.0" prefWidth="793.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Palavras">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="resultado" prefHeight="231.0" prefWidth="793.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Frases">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="resultado1" prefHeight="231.0" prefWidth="793.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <WebView fx:id="webView" layoutX="49.0" layoutY="90.0" prefHeight="285.0" prefWidth="793.0" />
+      <Label layoutX="255.0" layoutY="47.0" text="Outros" />
+      <Pane layoutX="306.0" layoutY="47.0" prefHeight="19.0" prefWidth="23.0" style="-fx-background-color: green;" />
+      <Pane layoutX="209.0" layoutY="46.0" prefHeight="19.0" prefWidth="23.0" style="-fx-background-color: #4682B4;" />
+      <Label layoutX="147.0" layoutY="47.0" text="Racismo" />
+      <Pane layoutX="105.0" layoutY="47.0" prefHeight="19.0" prefWidth="23.0" style="-fx-background-color: yellow;" />
+      <Label layoutX="49.0" layoutY="48.0" text="Bullying" />
+   </children>
+</AnchorPane>

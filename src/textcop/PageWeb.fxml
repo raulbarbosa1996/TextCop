@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="648.0" prefWidth="1005.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textcop.PageWebController">
+   <center>
+      <WebView fx:id="web" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #3399ff;" BorderPane.alignment="CENTER">
+        <items>
+            <Button mnemonicParsing="false" onAction="#butBackAction" text="Back" />
+            <TextField fx:id="addressBar" prefHeight="25.0" prefWidth="563.0" />
+          <Button mnemonicParsing="false" onAction="#go" prefHeight="25.0" prefWidth="60.0" text="Go" translateX="10.0" />
+        </items>
+      </ToolBar>
+   </top>
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#butTextAction" text="Run TextCop" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" right="10.0" />
+         </BorderPane.margin></Button>
+   </bottom>
+</BorderPane>
