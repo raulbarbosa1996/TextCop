@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.web.*?>
 <?import java.lang.*?>
@@ -18,6 +19,11 @@
             <Button mnemonicParsing="false" onAction="#butBackAction" text="Back" />
             <TextField fx:id="addressBar" prefHeight="25.0" prefWidth="563.0" />
           <Button mnemonicParsing="false" onAction="#go" prefHeight="25.0" prefWidth="60.0" text="Go" translateX="10.0" />
+            <Label text="TextCop" translateX="105.0">
+               <font>
+                  <Font name="Bernard MT Condensed" size="23.0" />
+               </font>
+            </Label>
         </items>
       </ToolBar>
    </top>

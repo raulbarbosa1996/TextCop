@@ -10,10 +10,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="709.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textcop.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="801.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="textcop.FXMLDocumentController">
     <children>
-        <Button layoutX="336.0" layoutY="261.0" onAction="#handleButtonActionFile" text="Computador" />
-      <Button layoutX="341.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleButtonActionWeb" prefHeight="25.0" prefWidth="73.0" text="Internet" />
+        <Button layoutX="346.0" layoutY="261.0" onAction="#handleButtonActionFile" text="Computador">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="344.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleButtonActionWeb" prefHeight="31.0" prefWidth="109.0" text="Internet">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="741.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="Ficheiro">
@@ -34,6 +40,6 @@
             <ImageView fx:id="img" fitHeight="80.0" fitWidth="367.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
          </left>
       </BorderPane>
-      <ImageView fx:id="img1" fitHeight="143.0" fitWidth="207.0" layoutX="260.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img1" fitHeight="143.0" fitWidth="207.0" layoutX="274.0" layoutY="156.0" pickOnBounds="true" preserveRatio="true" />
     </children>
 </AnchorPane>

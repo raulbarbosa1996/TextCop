@@ -99,7 +99,7 @@ public class FXMLTextController implements Initializable {
                 + "<style>"
                 +"yellow{"  
                 + "color: black;"
-                + "background-color:yellow;"
+                + "background-color:#ff8080;"
                 + "}"
                 + "green{"
                 + "color: black;"
