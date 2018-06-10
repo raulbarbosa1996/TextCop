@@ -31,7 +31,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextArea fx:id="resultado1" prefHeight="231.0" prefWidth="793.0" />
+                        <TextArea fx:id="resultado1" prefHeight="231.0" prefWidth="793.0" wrapText="true" />
                      </children>
                   </AnchorPane>
             </content>

@@ -121,7 +121,7 @@ public class ChoseFileController implements Initializable {
     
     @FXML 
     private void Pesquisa (ActionEvent event){
-        
+       
         try{
         
         /////comeca aqui
@@ -131,11 +131,11 @@ public class ChoseFileController implements Initializable {
          
       
        
-        
+                
                 switch (ext[1]) {
                     case "txt":
                     {
-                        
+                       
                        // List<String> myList = new ArrayList<String>(Arrays.asList(f.readAll()));
                         
                         hultig.sumo.Text x = new hultig.sumo.Text();
@@ -146,11 +146,11 @@ public class ChoseFileController implements Initializable {
                         //search(myList,teste);
                         searchWithHash(tFile, teste);
                         searchSentence(tFile,t,"");
-                        
+                                          
                         break;
                     }
                     case "pdf":
-                    {
+                    {                       
                         PDFReader pdfr= new PDFReader();
                         String s = pdfr.getText(f);
                         hultig.sumo.Text tFile = new hultig.sumo.Text(s);
@@ -160,11 +160,11 @@ public class ChoseFileController implements Initializable {
                         //search(myList,teste);
                         searchWithHash(tFile, teste);
                         searchSentence(tFile,t,"");
-                        
+                                              
                         break;
                     }
                     case "docx":
-                    {
+                    {                       
                         DOCXReader dcxr = new DOCXReader();
                         String l = dcxr.getText(f);
                         hultig.sumo.Text tFile = new hultig.sumo.Text(l);
@@ -175,11 +175,11 @@ public class ChoseFileController implements Initializable {
                         //search(myList,teste);
                         searchWithHash(tFile,teste);
                         searchSentence(tFile,t,"");
-                        
+                                              
                         break;
                     }
                 }
-
+                
         //// acaba aqui
            
         //engine.setJavaScriptEnabled(true);
@@ -202,7 +202,7 @@ public class ChoseFileController implements Initializable {
                 "<!DOCTYPE html>"
                 +"<head>"
                 + "<style>"
-                +"yellow{"  
+                +"pink{"  
                 + "color: black;"
                 + "background-color:#ff8080;"
                 + "}"
@@ -227,7 +227,7 @@ public class ChoseFileController implements Initializable {
                     if (w.equals(teste.get(i))) {
                         Word wx;
                         if(teste1.contains(w.toString())){
-                            wx= new Word("<yellow>"+w+"</yellow>");
+                            wx= new Word("<pink>"+w+"</pink>");
                         }
                         else if(teste2.contains(w.toString()))
                         {
@@ -301,7 +301,7 @@ public class ChoseFileController implements Initializable {
                    // x = x+"->"+sb1.toString()+" ("+id+")\n Vocabulary Intersection: "+(int)(m*100)+"\n Similiarity: " +(int)(sim*100)+"%\n";
                     x = x+"\n Vocabulary Intersection: "+(int)(m*100)+"\n Similiarity: " +(int)(sim*100)+"%\n";
                     flag=1;
-                    System.out.println(sal.toString());
+                    //System.out.println(sal.toString());
                 }
             }
              if(flag==1)
@@ -391,10 +391,10 @@ public class ChoseFileController implements Initializable {
 
         teste = new ArrayList<String>(Arrays.asList(fpalavras.readAll()));
         
-        resultado.setText("Palavras proibidas:"+"\n"+"\n");
+        resultado.setText("Palavras ofensivas:"+"\n"+"\n");
         for(int i=0;i<teste.size();i++){
            
-            resultado.setText(resultado.getText()+teste.get(i)+ "\n");
+            resultado.setText(resultado.getText()+teste.get(i)+ ",  ");
             
         }
         
