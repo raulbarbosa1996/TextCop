@@ -148,18 +148,9 @@ public class FXMLTextController implements Initializable {
     
 
     
-    /*
-    public void oi(List<String> teste){
-         for(int i=0;i<teste.size();i++){
-            resultado.setText(teste.get(i)+ "\n");
-             System.out.println(teste.get(i));
-        }    
-    }*/
-    
 
     public void search(List<String> t, List<String> proibidas) {
-        //palavras.add(palavra1);
-        //System.out.println(palavras.size());
+     
         StringBuilder sb = new StringBuilder();
         for (String s : t) {
             sb.append(s);
@@ -230,9 +221,7 @@ public class FXMLTextController implements Initializable {
                         + "         ");
                 String f = df.format(c);
                 String[] res = f.split(",");
-                //double fim=Double.parseDouble(f);
-                //System.out.println(f);
-                //System.out.println(res[0]);
+               
                 resultado.setText("\n" + "Foram encontradas: " + res[0] + " % de palavras proibidas :" + "\n");
             }
         }

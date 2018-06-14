@@ -93,7 +93,7 @@ public class PageWebController implements Initializable {
             stage.show();
             
             FXMLTextController controller = fxmlLoader.getController();
-            //controller.oi(teste);
+            
             controller.setText(list);
             
             controller.search(list, teste);

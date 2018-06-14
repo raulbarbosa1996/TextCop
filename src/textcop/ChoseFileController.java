@@ -136,7 +136,7 @@ public class ChoseFileController implements Initializable {
                     case "txt":
                     {
                        
-                       // List<String> myList = new ArrayList<String>(Arrays.asList(f.readAll()));
+                       
                         
                         hultig.sumo.Text x = new hultig.sumo.Text();
                         String str = x.readFile(f.getAbsolutePath(), "ISO-8859-1"); //UTF-8
@@ -180,10 +180,6 @@ public class ChoseFileController implements Initializable {
                     }
                 }
                 
-        //// acaba aqui
-           
-        //engine.setJavaScriptEnabled(true);
-        //engine.loadContent(HTML_STRING);
             
          
         }
